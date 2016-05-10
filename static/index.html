@@ -5,11 +5,9 @@
 <!-- font-awesome -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-
 <!-- angular -->
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
-
 <!-- googlemaps API -->
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
@@ -55,17 +53,15 @@ var myApp = angular.module('myApp', ['ngRoute']);
   // create the controller and inject Angular's $scope
   myApp.controller('mainController', function($scope) {
     // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!';     
+    $scope.message = 'Warrior Private Security';
   });
-
-  myApp.controller('aboutController', function($scope) {
-    $scope.message = 'Look! I am an about page.';
+  myApp.controller('servicesController', function($scope) {
+    $scope.message = 'Warrior Private Security';
   });
-
   myApp.controller('contactController', function($scope) {
-    $scope.message = 'Contact us! JK. This is just a demo.';
+    $scope.message = 'Warrior Private Security';
   });
-  </script>
+</script>
 </head>
 <script>
 (function(d, s, id) {
@@ -76,6 +72,11 @@ var myApp = angular.module('myApp', ['ngRoute']);
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
+<style>
+body {
+  height:100em;
+}
+</style>
 <body>
 <!-- HEADER AND NAVBAR -->
 <header>
