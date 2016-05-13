@@ -100,7 +100,7 @@
 	position:relative;
 	margin-top:-1.4em;
 	padding-top:2em;
-	height:32em;
+	height:34em;
 	padding-bottom:4%;
 	background-color:#A00000;
 }
@@ -159,7 +159,7 @@
  	margin-left:50%;
 	content: '';
 	width: 0;
-	margin-top:112em;
+	margin-top:114em;
 	height: 72%;
 	position: absolute;
 	border: 0.1px solid black;
@@ -195,8 +195,20 @@
   	margin-bottom:9%;
 }
 </style>
+
+<!-- <label>Click me: <input type="checkbox" ng-model="checked" ng-init="checked=true" /></label><br/>
+Show when checked:
+<span ng-if="checked" class="animate-if">
+  This is removed when the checkbox is unchecked.
+</span>
+<button ng-mouseover="count = count + 1" ng-init="count=0">
+  Increment (when mouse is over)
+</button>
+count: {{count}} -->
+
+
 <div class="jumbotron text-center" ng-controller="mainController">
-	<img id="mainwarrior" src="warriorsecurity.png" class="image-responsive">
+	<img id="mainwarrior" src="warriorsecurity.png" class="reveal-animation">
 	<img id="warrior" src="warrior.jpg" class="image-responsive">
 	<img id="contact_card" src="ryanandfriend.jpg" class="img-responsive">
     <div id="likebutton" class="fb-like" data-href="https://www.facebook.com/warrior209/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
