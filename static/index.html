@@ -82,13 +82,28 @@ var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 }(document, 'script', 'facebook-jssdk'));
 </script>
 <style>
-body {
-  height:100em;
+@media all and (max-device-width: 480px) {
+    #navbar {
+        margin-left:-6em;
+    }
+    #contactbar {
+        margin-right:-3em;
+    }
 }
-@media all and (max-width: 480px) {
- /* styles here */
+@media all and (min-device-width: 481px) and (max-device-width: 1328px) {
+    #contactbar {
+        margin-right:-3em;
+    }
 }
-.reveal-animation {
+@media all and (min-device-width: 1329px) {
+    #navbar {
+        margin-left:-12em;
+    }
+    #contactbar {
+        margin-right:-8.2em;
+    }
+}
+/*.reveal-animation {
     transition: all 1s;
 }
 .reveal-animation.ng-enter {
@@ -113,19 +128,19 @@ body {
     opacity: 0.5;
     border:5px solid black;
     width:8%;
-}
+}*/
 </style>
 <body>
 <!-- HEADER AND NAVBAR -->
 <header>
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/">Warrior Security Services</a>
+      <a id="navbar" class="navbar-brand" href="/">Warrior Security Services</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
       <li><a href="#services"><i class="fa fa-shield"></i> Services</a></li>
-      <li><a href="#contact"><i class="fa fa-comment"></i> Contact Us</a></li>
+      <li id="contactbar"><a href="#contact"><i class="fa fa-comment"></i> Contact Us</a></li>
     </ul>
   </div>
 </header>

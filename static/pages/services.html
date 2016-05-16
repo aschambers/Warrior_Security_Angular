@@ -1,236 +1,303 @@
 <style>
-.jumbotron {
-	z-index:-4;
-	height:8em;
-	width:100%;
-	background-color:#A00000;
+@media all and (max-device-width: 480px) {
+    body {
+    	width:1000px;
+    }
+    .jumbotron {
+		z-index:-4;
+		height:50em;
+		width:100%;
+		background-color:#A00000;
+	}
+	#header {
+		font-size:1.5em;
+		margin-left:7.5em;
+		color:#E8E8E8;
+	}
+	#para1 {
+		margin-left:20em;
+		width:25em;
+		text-align:left;
+		color:#F8F8F8;
+	}
+	#para2 {
+		margin-left:20em;
+		width:25em;
+		text-align:left;
+		color:#F8F8F8;
+	}
+	#guard {
+		margin-top:-31em;
+		margin-left:-25em;
+		width:16em;
+		height:27em;
+	}
+	#services {
+		margin-top:-0.5em;
+		font-size:2em;
+		color:#E8E8E8;
+	}
+	#eventsec {
+		color:white;
+		text-align:left;
+		margin-left:0em;
+	}
+	#construction {
+		color:white;
+		text-align:left;
+		margin-top:-1.5em;
+		margin-left:8em;
+	}
+	#bike {
+		color:white;
+		margin-top:-1.5em;
+		margin-left:12em;
+	}
+	#shopping {
+		color:white;
+		margin-top:-1.5em;
+		margin-left:31em;
+	}
+	#eventimg {
+		display:inline-block;
+		margin-left:-0.8em;
+		width:8em;
+		height:8em;
+	}
+	#constructionimg {
+		display:inline-block;
+		width:8em;
+		height:8em;
+		margin-left:4em;
+	}
+	#bikesimg {
+		display:inline-block;
+		width:8em;
+		height:8em;
+		margin-left:5.5em;
+	}
+	#shoppingimg {
+		display:inline-block;
+		width:8em;
+		height:8em;
+		margin-left:2em;
+	}
+	#line {
+		margin-top:-1em;
+		margin-bottom:2em;
+	}
 }
-#mainwarrior {
-	position:relative;
-	margin-left:-50%;
-	margin-top:-2em;
-	width:12%;
-	height:215%;
-	z-index:1;
+@media all and (min-device-width: 481px) and (max-device-width:1328px){
+	.jumbotron {
+		z-index:-4;
+		height:50em;
+		width:104%;
+		background-color:#A00000;
+	}
+	#header {
+		font-size:1.5em;
+		margin-left:-2em;
+		color:#E8E8E8;
+	}
+	#para1 {
+		margin-left:20em;
+		width:40em;
+		text-align:left;
+		color:#F8F8F8;
+	}
+	#para2 {
+		margin-left:20em;
+		width:40em;
+		text-align:left;
+		color:#F8F8F8;
+	}
+	#guard {
+		margin-top:-21em;
+		margin-left:-40em;
+		width:16em;
+		height:17em;
+	}
+	#services {
+		margin-top:-0.5em;
+		font-size:2em;
+		color:#E8E8E8;
+	}
+	#eventsec {
+		color:white;
+		text-align:left;
+		margin-left:3em;
+	}
+	#construction {
+		color:white;
+		text-align:left;
+		margin-top:-1.5em;
+		margin-left:13em;
+	}
+	#bike {
+		color:white;
+		margin-top:-1.5em;
+		margin-left:14em;
+	}
+	#shopping {
+		color:white;
+		margin-top:-1.5em;
+		margin-left:40em;
+	}
+	#eventimg {
+		display:inline-block;
+		margin-left:0em;
+		width:12em;
+		height:12em;
+	}
+	#constructionimg {
+		display:inline-block;
+		width:12em;
+		height:12em;
+		margin-left:3em;
+	}
+	#bikesimg {
+		display:inline-block;
+		width:12em;
+		height:12em;
+		margin-left:3.5em;
+	}
+	#shoppingimg {
+		display:inline-block;
+		width:12em;
+		height:12em;
+		margin-left:2.5em;
+	}
+	#line {
+		margin-top:-1em;
+		margin-bottom:2em;
+	}
 }
-#contact_card {
-	position:relative;
-	margin-top:-7.65em;
-	margin-left:40%;
-	height:233%;
-	width:27%;
-	z-index:1;
-}
-#warrior {
-	position:absolute;
-	margin-top:-2em;
-	margin-left:9%;
-	height:7%;
-	width:4%;
-	z-index:2;
-}
-#navbar_text {
-	position:relative;
-	font-size:1em;
-	width:40%;
-	margin-top:-8em;
-	margin-left:34%;
-	margin-bottom:10%;
-	z-index:4;
-	color:white;
-}
-#likebutton {
-	margin-top:-8em;
-	position:absolute;
-	margin-left:-1.8%;
-	z-index:4;
-}
-#sharebutton {
-	margin-top:-8em;
-	position:absolute;
-	margin-left:5%;
-	z-index:4;
-}
-#banner {
-	position:relative;
-	margin-top:-2.1%;
-	height:30em;
-	width:104%;
-	z-index:2;
-}
-#bannertext1 {
-	position:relative;
-	font-size:150%;
-	margin-top:-12em;
-	margin-left:20em;
-	width:50%;
-	color:white;
-	z-index:3;
-}
-#bannertext2 {
-	position:relative;
-	font-size:150%;
-	margin-left:16em;
-	color:white;
-	z-index:3;
-}
-#verticalbanner {
-	list-style-type: none;
-    margin-top:14em;
-    padding: 0;
-    width: 100%;
-    height:33em;
-    background-color:black;
-}
-#listitems:nth-child(1) {
-	margin-top:1em;
-}
-#listitems {
-	position:relative;
-	font-size: 32px;
-	width:100%;
-	margin-left:0.5em;
-	display: block;
-    color: white;
-    padding: 8px 0 8px 16px;
-    text-decoration: none;
-    float:left;
-}
-#red2 {
-	position:relative;
-	margin-top:-1.4em;
-	padding-top:2em;
-	height:32em;
-	padding-bottom:4%;
-	background-color:#A00000;
-}
-#choose {
-	font-size:2em;
-	margin-top:1em;
-	margin-left:0.5em;
-	color:white;
-}
-#ryan {
-	display:block;
-	height:20em;
-	width:20em;
-	margin-top:3em;
-	margin-left:1.5em;
-	margin-bottom:5em;
-}
-#homebus_sec {
-	font-size:2em;
-	margin-top:-12.5em;
-	margin-left:12em;
-	color:white;
-	font-family: "Courier New", Courier, monospace;
-}
-#para1 {
-	margin-left:10em;
-	margin-top:1em;
-	font-size:1.5em;
-	margin-left:16em;
-	color:white;
-	font-family: "Courier New", Courier, monospace;
-}
-#para2 {
-	margin-top:1em;
-	font-size:1.5em;
-	margin-left:16em;
-	margin-bottom:1.5em;
-	color:white;
-	font-family: "Courier New", Courier, monospace;
-}
-#about {
-	display:inline-block;
-	font-size:2.5em;
-	margin-left:4.3%;
-	margin-top:5%;
-}
-#what {
-	margin-top:-4.2%;
-	margin-left:60%;
-	font-size:2.5em;
-}
-#whatdiv {
-	margin-top:1.2%;
-}
-#whatdiv:after {
- 	margin-left:50%;
-	content: '';
-	width: 0;
-	margin-top:112em;
-	height: 72%;
-	position: absolute;
-	border: 0.1px solid black;
-	top: 0;
-	left: 0em;
-}
-#aboutdiv {
-	position:relative;
-	margin-top:-2%;
-}
-#aboutpara {
-	position:absolute;
-	margin-top:1%;
-	margin-left:4.4%;
-	width:34%;
-	font-size:20px;
-	color:#700000;
-}
-#whatbullets {
-	position:absolute;
-	list-style-type:square;
-	font-size:1.5em;
-	margin-top:1%;
-	width:15em;
-	margin-left:61%;
-}
-#googleMap {
-  	position:relative;
-  	margin-top:8%;
-  	margin-left:6%;
-  	width: 25em;
-  	height: 20em;
-  	margin-bottom:9%;
+@media all and (min-device-width: 1329px) {
+	.jumbotron {
+		z-index:-4;
+		height:50em;
+		width:100%;
+		background-color:#A00000;
+	}
+	#header {
+		font-size:1.5em;
+		margin-left:-9em;
+		color:#E8E8E8;
+	}
+	#para1 {
+		margin-left:29em;
+		width:45em;
+		text-align:left;
+		color:#F8F8F8;
+	}
+	#para2 {
+		margin-left:29em;
+		width:45em;
+		text-align:left;
+		color:#F8F8F8;
+	}
+	#guard {
+		margin-top:-21em;
+		margin-left:-52em;
+		width:16em;
+		height:17em;
+	}
+	#services {
+		margin-top:-0.5em;
+		font-size:2em;
+		color:#E8E8E8;
+	}
+	#eventsec {
+		color:white;
+		text-align:left;
+		margin-left:3em;
+	}
+	#construction {
+		color:white;
+		text-align:left;
+		margin-top:-1.5em;
+		margin-left:20em;
+	}
+	#bike {
+		color:white;
+		margin-top:-1.5em;
+		margin-left:16em;
+	}
+	#shopping {
+		color:white;
+		margin-top:-1.5em;
+		margin-left:57em;
+	}
+	#eventimg {
+		display:inline-block;
+		margin-left:-4em;
+		width:12em;
+		height:12em;
+	}
+	#constructionimg {
+		display:inline-block;
+		width:12em;
+		height:12em;
+		margin-left:10em;
+	}
+	#bikesimg {
+		display:inline-block;
+		width:12em;
+		height:12em;
+		margin-left:11em;
+	}
+	#shoppingimg {
+		display:inline-block;
+		width:12em;
+		height:12em;
+		margin-left:11em;
+	}
+	#line {
+		margin-top:-1em;
+		margin-bottom:2em;
+	}
 }
 </style>
 <div class="jumbotron text-center" ng-controller="servicesController">
-	<img id="mainwarrior" src="warriorsecurity.png" class="image-responsive">
-	<img id="warrior" src="warrior.jpg" class="image-responsive">
-	<img id="contact_card" src="ryanandfriend.jpg" class="img-responsive">
-    <div id="likebutton" class="fb-like" data-href="https://www.facebook.com/warrior209/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-	<div id="sharebutton" class="fb-share-button" data-href="https://www.facebook.com/warrior209/" data-layout="button" data-mobile-iframe="true"></div>
-	<p id="navbar_text">{{message}}</p>
+	<h3 id="header">Security Guard Services</h3>
+	<p id="para1">At Warrior Private Security, we do everything needed to ensure the quality of protection you and your family recieve is of the highest caliber. And, because we integrate all of our services, we're able to deduce the most accurate picture of what's happening during a time of high urgency. With more than 10 years of security experience, we know what it takes to protect you and yours. You put your trust in us and it is our job to ensure total protection.</p>
+	<p id="para2">Threats to your survival as a business are documented in order to further increase the level of safety. Anyone who repeatedly disobeys the rules or attempts to cause problems will be dealt with in a swift and timely manner. Communication between guards is key in order to prevent these problems from reoccuring in the future. We guarentee there will be total protection at Warrior Security Services through whatever means necessary. No one ever expects badd things to happen to them because it's always the other guy, except when it doesn't.</p>
+	<img id="guard" src="guard.jpg">
+	<hr id="line">
+	<div>
+		<h3 id="services">Available Services</h3>
+		<h3 id="eventsec">Event Security</h3>
+		<h3 id="construction">Construction Site Security</h3>
+		<h3 id="bike">Bike Patrol Security</h3>
+		<h3 id="shopping">Shopping Center Security</h3>
+	<div>
+	<div>
+		<img id="eventimg" src="eventsecurity.jpg">
+		<img id="constructionimg" src="construction.jpg">
+		<img id="bikesimg" src="bikes.jpg">
+		<img id="shoppingimg" src="shopping.jpg">
+	</div>
 </div>
-<div id="bannerheight" ng-controller="servicesController">
-	<img id="banner" src="services.jpg">
-  	<h4 id="bannertext1" class="image-responsive">WARRIOR PRIVATE SECURITY</h4>
-	<h4 id="bannertext2" class="image-responsive">THE PROFESSIONAL APPROACH TO SECURITY</h4>
-	<ul id="verticalbanner" class="list-group">
-  		<li id="listitems" class="list-group item">TOTAL PROTECTION <p id="inner"> Your assets are important, so make sure they are protected.</p></li>
-  		<li id="listitems" class="list-group item">TOTAL SECURITY <p id="inner"> Integrate your security solution with the latest technologies.</p></li>
-  		<li id="listitems" class="list-group item">TOTAL PIECE OF MIND <p id="inner"> When you know you're safe and secure, you can rest easily.</p></li>
-	</ul>
-	<div id="red2">
-		<h2 id="choose">Why Choose Us?</h2>
-		<img id="ryan" src="ryan.jpg">
-		<h2 id="homebus_sec">HOME & BUSINESS SECURITY CENTER</h2>
-		<p id="para1">Protecting your home is a basic human instinct - you've worked hard for what you have. Why would you jeopardize that? At Warrior Private Security, we're dedicated to providing you true security and peace of mind. When you know you're safe and secure, you can rest easily.</p>
-		<p id="para2">With 10 years combined experience as a security guard/police explorer, you can trust us to protect your events, family, and business. We set ourselves apart with unwavering integrity and a strict code of ethics.</p>
-	</div>
-	<div id="aboutdiv">
-		<h3 id="about">ABOUT US</h3>
-		<p id="aboutpara">We've been where you are. We know you need a security contractor who you can trust.</p>
-	</div>
-	<div id="whatdiv">
-		<h3 id="what">WHAT WE DO?</h3>
-		<ul id="whatbullets">
-			<li id="innerwhatbullets">Event Security</li>
-			<li id="innerwhatbullets">Construction Site Security</li>
-			<li id="innerwhatbullets">Bike Patrol Security</li>
-			<li id="innerwhatbullets">Shopping Center Security</li>
-		</ul>
-	</div>
-	<div id="googleMap">
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
