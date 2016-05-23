@@ -1,0 +1,49 @@
+<script>
+FB = null;
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  // if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1106065126117851";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="jumbotron text-center" ng-controller="mainController">
+	<img id="mainwarrior" src="../static/img/warrior2.jpg" class="reveal-animation">
+	<img id="warrior" src="../static/img/warrior.jpg" class="image-responsive">
+	<img id="contact_card" src="../static/img/ryanandfriend.jpg" class="img-responsive">
+    <div id="likebutton" class="fb-like" data-href="https://www.facebook.com/warrior209/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+	<div id="sharebutton" class="fb-share-button" data-href="https://www.facebook.com/warrior209/" data-layout="button" data-mobile-iframe="true"></div>
+	<p id="navbar_text">Warrior Private Security</p>
+</div>
+<div id="bannerheight" ng-controller="mainController">
+	<img id="banner" src="../static/img/securitybanner2.jpg">
+  	<h4 id="bannertext1" class="image-responsive">WARRIOR PRIVATE SECURITY</h4>
+	<h4 id="bannertext2" class="image-responsive">THE PROFESSIONAL APPROACH TO SECURITY</h4>
+	<ul id="verticalbanner" class="list-group">
+  		<li id="listitems" class="list-group item">TOTAL PROTECTION <p id="inner"> Your assets are important, so make sure they are protected.</p></li>
+  		<li id="listitems" class="list-group item">TOTAL SECURITY <p id="inner"> Integrate your security solution with the latest technologies.</p></li>
+  		<li id="listitems" class="list-group item">TOTAL PIECE OF MIND <p id="inner"> When you know you're safe and secure, you can rest easily.</p></li>
+	</ul>
+	<div id="red2">
+		<h2 id="choose">Why Choose Us?</h2>
+		<img id="ryan" src="../static/img/ryan.jpg">
+		<h2 id="homebus_sec">HOME & BUSINESS SECURITY CENTER</h2>
+		<p id="para1">Protecting your home is a basic human instinct - you've worked hard for what you have. Why would you jeopardize that? At Warrior Private Security, we're dedicated to providing you true security and peace of mind. When you know you're safe and secure, you can rest easily.</p>
+		<p id="para2">With 10 years combined experience as a security guard/police explorer, you can trust us to protect your events, family, and business. We set ourselves apart with unwavering integrity and a strict code of ethics.</p>
+	</div>
+	<div id="aboutdiv">
+		<h3 id="about">ABOUT US</h3>
+		<p id="aboutpara">We've been where you are. We know you need a security contractor who you can trust. Our office is currently located at 1283 Paseo Belleza, Turlock CA 95382.</p>
+	</div>
+	<div id="whatdiv">
+		<h3 id="what">WHAT WE DO?</h3>
+		<ul id="whatbullets">
+			<li id="innerwhatbullets">Event Security</li>
+			<li id="innerwhatbullets">Construction Site Security</li>
+			<li id="innerwhatbullets">Bike Patrol Security</li>
+			<li id="innerwhatbullets">Shopping Center Security</li>
+		</ul>
+	</div>
+	<div id="googleMap">
+</div>
